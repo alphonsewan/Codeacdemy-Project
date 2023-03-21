@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {background-image: url("Image/wallhaven-83z85y.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;}
+
+
+a {text-decoration: none;
+  color: rgba(0, 0, 0, 0.822);}
+
+a :hover {
+  color:aliceblue;;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+color: aliceblue;
+display: flex;
+justify-content: center;
+width: fit-content;
+margin-top: 50px;
+font-size: 64px;
+font-weight: bold;}
+
+.button {
+  background-color: rgb(231, 145, 15);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: fit-content;
+  padding: 20px 20px;
+  font-weight: 600;
+  font-size: 20px;
+
+}
+
+table {margin: 50px;}
+
+thead th {background-color: rgb(231, 145, 15);
+  color: black;
+  padding: 10px;
+
+}
+
+th {background-color: rgba(43, 43, 43, 0.918);
+  color: rgb(238, 238, 238);
+    padding: auto 100px;}
+
+main {display: flex;
+justify-content: center;}
+
+td {
+  padding: 25px;
+  background-color: rgba(250, 235, 215, 0.932);
+  align-items: center;
+  text-align: left;
+  max-width: 900px; 
+  min-width: 300px;
+}
+
