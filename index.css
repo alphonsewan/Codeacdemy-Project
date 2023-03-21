@@ -20,80 +20,77 @@
 }
 
 .content {
-  display: flex;
+  display:flex;
 }
 
-.brushes {
+.box {
   display: flex;
+  flex-basis: 33.33%;
   flex-direction: column;
   align-items: center;
+  border: 10px solid white;
+  text-align: center;
+  padding: 30px 20px;
+  gap: 30px;
+}
+
+#color1 {
   background-color: mediumaquamarine;
-  border: 10px solid white;
-  text-align: center;
-  padding: 30px 20px;
-  gap: 20px;
 }
 
-.brushes > h1 {
-  font-family: Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  color: white;
-}
-
-.brushes > h2 {
-  font-family: Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
-}
-
-.frames {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#color2 {
   background-color: lightcoral;
-  border: 10px solid white;
-  text-align: center;
-  padding: 30px 20px;
-  gap: 20px;
 }
 
-.frames > h1 {
-  font-family: Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  color: white;
-}
-
-.frames > h2 {
-  font-family: Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
-}
-
-.paint {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#color3 {
   background-color: skyblue;
-  border: 10px solid white;
-  text-align: center;
-  padding: 30px 20px;
-  gap: 20px;
 }
 
-.paint > h1 {
+.box > h1 {
+  margin-bottom: 30px;
   font-family: Helvetica, sans-serif;
   font-size: 32px;
   font-weight: bold;
   color: white;
 }
 
-.paint > h2 {
+.box > h2 {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: black;
+}
+
+.box > p {
+  max-width: 500px;
+  min-width: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    flex-basis: 50%;
+  }
+
+  .hero-section > h1 {
+    margin-left: 50px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    flex-basis: 100%;
+  }
+  .hero-section > h1 {
+    margin-left: 50px;
+  }
+
 }
